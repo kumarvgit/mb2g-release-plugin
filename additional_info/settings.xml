@@ -29,6 +29,12 @@
             <username>admin</username>
             <password>admin123</password>
         </server>
+<!--        developer connection for maven release plugin-->
+        <server>
+            <id>github</id>
+            <username>kumarvgit</username>
+            <password>V@ibh@v!(*8</password>
+        </server>
     </servers>
 
     <mirrors>
