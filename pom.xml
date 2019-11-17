@@ -58,7 +58,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
-<!--                    For circile ci to skip re commit in loop-->
+<!--                    For circle ci to skip re commit in loop-->
                     <scmCommentPrefix>[maven-release-plugin] [skip ci]</scmCommentPrefix>
                 </configuration>
             </plugin>
