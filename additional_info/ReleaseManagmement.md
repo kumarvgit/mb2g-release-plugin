@@ -10,3 +10,4 @@
 ## mvn clean release:prepare -DdryRun=true
 ## mvn dependency:go-offline -- download all deps and go offline to work with
 ## mvn deploy -s .circleci/settings.xml provide settings file
+
