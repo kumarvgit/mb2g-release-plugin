@@ -6,3 +6,4 @@
 ## update all versions in multimodule project
 ### mvn release:update-versions -DautoVersionSubmodules=true
 ## mvn clean release:prepare will not work if there are local modifications
+## mvn release:rollback is going to rollback the tag but manually delete the tag from remote and local (there is a bug in release plugin)
