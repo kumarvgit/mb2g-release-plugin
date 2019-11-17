@@ -1,7 +1,11 @@
 ## SCM is tagged against a release for auditing purpose
 ## mvn release:prepare
+## delete git tag (both of below step is needed)
+### remote --> git push --delete origin mb2g-release-plugin-1.0
+### delete local repository tag --> git tag -d mb2g-release-plugin-1.0   
 ## update all versions in multimodule project
 ### mvn release:update-versions -DautoVersionSubmodules=true
-## mvn clean release:prepare will not work if there are local modifications --> this step is going to create a tag in scm for corresponding release this step has not performed the release
-## mvn release:perform --> this step will actually perform the release which will include deploying into package cloug
-## mvn release:clean is going to clean the prepare step
+## mvn clean release:prepare will not work if there are local modifications
+## mvn release:rollback is going to rollback the tag but manually delete the tag from remote and local (there is a bug in release plugin)
+## mvn clean release:prepare -DdryRun=true
+## mvn dependency:go-offline -- download all deps and go offline to work with
