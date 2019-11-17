@@ -9,3 +9,4 @@
 ## mvn release:rollback is going to rollback the tag but manually delete the tag from remote and local (there is a bug in release plugin)
 ## mvn clean release:prepare -DdryRun=true
 ## mvn dependency:go-offline -- download all deps and go offline to work with
+## --batch-mode accepts default values
