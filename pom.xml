@@ -49,14 +49,15 @@
         </plugins>
     </build>
 
+    <!--    package cloud distribution-->
     <distributionManagement>
         <repository>
-            <id>packagecloud.release</id>
-            <url>packagecloud+https://packagecloud.io/springframeworkguru/release</url>
+            <id>packagecloud.releases</id>
+            <url>packagecloud+https://packagecloud.io/techasart/releases</url>
         </repository>
         <snapshotRepository>
-            <id>packagecloud.snapshot</id>
-            <url>packagecloud+https://packagecloud.io/springframeworkguru/snapshot</url>
+            <id>packagecloud.snapshots</id>
+            <url>packagecloud+https://packagecloud.io/techasart/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 </project>

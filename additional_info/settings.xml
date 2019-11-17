@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+            <server>
+                <id>packagecloud.releases</id>
+<!--                            <password><API_TOKEN></password>-->
+            </server>
+            <server>
+                <id>packagecloud.snapshots</id>
+<!--                            <password><API_TOKEN></password>-->
+            </server>
+        <server>
+<!--            This id has to match the id in distribution management else it will not work-->
+            <id>nexus-snapshot</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+        <server>
+            <!--            This id has to match the id in distribution management else it will not work-->
+            <id>nexus-release</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+        <server>
+            <!--            This id has to match the id in distribution management else it will not work-->
+            <id>central</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+    </servers>
+
+    <mirrors>
+        <mirror>
+            <id>central</id>
+            <name>central</name>
+            <url>http://localhost:8081/repository/nexus-group/</url>
+            <mirrorOf>*</mirrorOf>
+        </mirror>
+    </mirrors>
+</settings>
